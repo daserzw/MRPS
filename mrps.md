@@ -1,4 +1,5 @@
 ![idem-garr-logo]
+
 # IDEM Federation
 
 ## Metadata Registration Practice Statement
@@ -11,13 +12,15 @@
 
 **Acknowledgements**
 
-This document is based on the [REFEDS Metadata Registration Practice Statement template].
+This document is based on the [REFEDS Metadata Registration Practice
+Statement template].
 
 **Licence**
 
 ![logo]
 
-This document is licensed under Creative Commons CC BY 4.0. You are free to share, re-use and adapt this document as long as attribution is given.
+This document is licensed under Creative Commons CC BY 4.0. You are free
+to share, re-use and adapt this document as long as attribution is given.
 
 ## 1. Definitions and Terminology
 
@@ -27,28 +30,57 @@ The following definitions are used in this document:
 
 | Definition                 | Description |
 | -------------------------- | ------------- |
-| Federation                 | Identity Federation. An association of organisations that come together to securely exchange information as appropriate about their users and resources to enable collaborations and transactions.  |
-| Federation Member          | An organisation that has joined the Federation by agreeing to be bound by the Federation Policy in writing.  Federation Member can register both Identity and Service Providers. |
-| Federation Partner	     | An organisation that signed a memorandum of understanding with the Federation. Federation Partners can register only Service Providers. |
-| Federation Participant     | Either a Federation Member or a Federation Partner.|  
-| Federation Operator        | Organisation providing the infrastructure for Authentication and Authorisation to Federation Members.|
-| Federation Policy          | A document describing the obligations, rights and expectations of the federation members and the Federation Operator. |
-| Entity                     | A discrete component that a member wishes to register and describe in metadata.  This is typically an Identity Provider or Service Provider. |
-| Registry                   | System used by the Federation Operator to register entity metadata. This may be via a self-service tool or via other manual processes. |
-| Registered Representatives | Individuals authorised to act on behalf of the member.  These may take on different roles with different rights attached to them. |
+| Federation                 | Identity Federation. An association of
+organisations that come together to securely exchange information as
+appropriate about their users and resources to enable collaborations and
+transactions.  |
+| Federation Member          | An organisation that has joined the
+Federation by agreeing to be bound by the Federation Policy in writing.
+Federation Member can register both Identity and Service Providers. |
+| Federation Partner	     | An organisation that signed a memorandum of
+understanding with the Federation. Federation Partners can register only
+Service Providers. |
+| Federation Participant     | Either a Federation Member or a Federation
+Partner.|  
+| Federation Operator        | Organisation providing the infrastructure
+for Authentication and Authorisation to Federation Members.|
+| Federation Policy          | A document describing the obligations,
+rights and expectations of the federation members and the Federation
+Operator. |
+| Entity                     | A discrete component that a member wishes to
+register and describe in metadata.  This is typically an Identity Provider
+or Service Provider. |
+| Registry                   | System used by the Federation Operator to
+register entity metadata. This may be via a self-service tool or via other
+manual processes. |
+| Registered Representatives | Individuals authorised to act on behalf of
+the member.  These may take on different roles with different rights
+attached to them. |
 
 ## 2. Introduction and Applicability
 
-The IDEM Federation is the Italian Identity Federation for the research and educational Organizaions that belong to the GARR network. GARR provides the Federation Operator through the GARR IDEM AAI Service. 
-This document describes the metadata registration practices of the GARR IDEM AAI Federation Operator with effect from the publication date shown on the cover sheet. All new entity registrations performed in the IDEM Federation on or after that date SHALL be processed as described here until the document is superseded.
+The IDEM Federation is the Italian Identity Federation for the research and
+educational Organizaions that belong to the GARR network. GARR provides the
+Federation Operator through the GARR IDEM AAI Service.
+Normative documents of the IDEM Federations are:
+* The IDEM Federation Regulation [IDEM-Reg].
+* The IDEM Federation Rules of Participation [IDEM-Part-Rules].
+
+This document describes the metadata registration practices of the GARR IDEM
+AAI Federation Operator with effect from the publication date shown on the
+cover sheet. All new entity registrations performed in the IDEM Federation
+on or after that date SHALL be processed as described here until the
+document is superseded.
 
 This document SHALL be published on the Federation website at:
 
 ``https://www.idem.garr.it/idem-metadata-registration-practice-statement``
 
-Updates to the documentation SHALL be accurately reflected in entity metadata.
+Updates to the documentation SHALL be accurately reflected in entity
+metadata.
 
-All the entities that belong to the IDEM Federation SHALL include a reference to this registration policy.
+All the entities that belong to the IDEM Federation SHALL include a
+reference to this registration policy.
 
 ## 3. Member and Partner Eligibility and Ownership
 
@@ -62,9 +94,9 @@ Members and Partners of the Federation are also eligible to make use of
 a number of services made available by the IDEM Federation Operator, though
 to different extent. The main services are:
 * the IDEM registry to register entities: https://registry.idem.garr.it
-* the IDEM help desk available at <idem-help@garr.it>.
-* the IDEM wiki and documentation site: https://wiki.idem.garr.it
-* the IDEM tools available at https://registry.idem.garr.it/idem-tools
+* the IDEM help desk: <idem-help@garr.it>.
+* the IDEM documentation site: https://wiki.idem.garr.it
+* the IDEM federaton tools: https://registry.idem.garr.it/idem-tools
 
 The procedure for becoming a member or a partner of the Federation is
 documented at:
@@ -93,10 +125,10 @@ Secretariat.
 
 The process, for both prospective members and partners, also establishes a
 canonical organisation name for the Federation participant.
-The canonical organisation name of a participant MAY change during the membership
-period, for example as a result of corporate name changes or mergers.  The
-participant’s canonical organisation name is disclosed in the entity’s SAML v2.0
-```<md:OrganizationName>``` element.
+The canonical organisation name of a participant MAY change during the
+membership period, for example as a result of corporate name changes or
+mergers.  The participant’s canonical organisation name is disclosed in the
+entity’s SAML v2.0 ```<md:OrganizationName>``` element.
 
 ## 4. Metadata Format
 
@@ -111,7 +143,7 @@ is a non-normative example:
     registrationAuthority="https://www.idem.garr.it"
     registrationInstant="2019-04-01T00:00:01Z">
     <mdrpi:RegistrationPolicy xml:lang="en">
-        https://www.idem.garr.it/
+        https://www.idem.garr.it/idem-metadata-registration-practice-statement
     </mdrpi:RegistrationPolicy>
 </mdrpi:RegistrationInfo>
 ```
@@ -131,7 +163,8 @@ eduGAIN, unless specifiy differently by the Member they belong to.
  only if the Member or the Partner they belong to explicitly ask for the
  eduGAIN publishing.
  
-The process by which a Federation member can register an entity is described at:
+The process by which a Federation member can register an entity is described
+at:
 
 ``https://www.idem.garr.it/en/join/``
 
@@ -151,10 +184,6 @@ the domain owner on a per-entity basis.
 Permission SHALL NOT be regarded as including permission for the use of
 sub-domains.
 
-
-> davide - 20190326 - arrivato qui.
-
-
 #### 5.2 EntityID Format
 
 Values of the entityID attribute registered MUST be an absolute URI using
@@ -162,56 +191,107 @@ the http, https or urn schemes.
 
 https-scheme URIs are RECOMMENDED to all members.
 
-http-scheme and https-scheme URIs used for entityID values MUST contain a host part whose value is a DNS domain.
+http-scheme and https-scheme URIs used for entityID values MUST contain a
+host part whose value is a DNS domain.
 
 #### 5.3 Scope Format
 
-For Identity Provider entities, scopes MUST be rooted in the DNS domain name space, expressed in lowercase. Multiple scopes are allowed.
+For Identity Provider entities, scopes MUST be expressed in lowercase and
+rooted in a valid DNS domain name space. Multiple scopes are allowed.
 
-Regular expressions representing multiple scopes MAY be used, but all DNS domains covered by the expression SHALL be included in checks by the Federation Operator for the member's right to use those domains. For these checks to be achievable by the Federation Operator, the set of DNS domains covered by the regular expression MUST end with a domain under a public suffix - that is, a literal '.', followed by at least two DNS labels separated by literal '.'s (representing a domain to be validated as "owned" by the entity owner), and ending with a '$' anchor (e.g. `(foo|bar)\.example\.com$`).
+Regular expressions representing multiple scopes MAY be used, but all DNS
+domains covered by the expression SHALL be included in checks by the
+Federation Operator for the member's right to use those domains. For these
+checks to be achievable by the Federation Operator, the set of DNS domains
+covered by the regular expression MUST end with a domain under a public
+suffix - that is, a literal '.', followed by at least two DNS labels
+separated by literal '.'s (representing a domain to be validated as "owned"
+by the entity owner), and ending with a '$' anchor (e.g.
+`(foo|bar)\.example\.com$`).
 
 #### 5.4 Entity Validation
 
-On entity registration, the Federation Operator SHALL carry out entity validation checks.
+On entity registration, the Federation Operator SHALL carry out entity
+validation checks.
 These checks include:
 
-*	Ensuring all required information is present in the metadata;
-*	Ensuring metadata is correctly formatted;
-*	Ensuring protocol endpoints are properly protected with TLS / SSL certificates.
+* Ensuring all required information is present in the metadata;
+* Ensuring metadata is correctly formatted;
+* Ensuring protocol endpoints are properly protected with TLS / SSL.
+* Ensuring the software providing Identity or Service provider
+functionalities is properly configured, secured and fully operational.
+
+For Identity Providers the validation process will also check the following
+requirements:
+* Information on the enrollment and vetting processes has been provided.
+* A URL with the Identity Provider privacy policy is published.
+
+For Service Providers the validation process will also check the following
+requirements:
+* Declaration to fulfill the General Data Protection Regulation.
+* A URL with the Service Provider privacy policy listing all the attributes
+necessary to use the service and their respective treatment.
 
 ## 6. Entity Management
 
-> This section describes the processes undertaken once an entity has been registered – including processes for change requests, removal and any intervention the Federation Operator may take. If you have a Monitoring Practice Statement, this is likely to be referenced here. The reader will want to understand that any changes made to an entity are completed with the correct permission and for good reasons. Please ensure that any processes described here reflect your current practice and any published documentation currently available for your Federation.
-> 
-> If you have multiple different roles under the Registered Representative category (e.g. management contacts, technical contacts, administrative contacts) the different rights of these roles can be detailed here.
-> 
-> Example Wording
-> -----------------
-
-Once a member has joined the Federation any number of entities MAY be added, modified or removed by the organisation.
+Once a Federation Participant has joined the IDEM Federation new entities
+MAY be added, modified or removed by the organisation with the approval of
+the Federation Operator.
 
 #### 6.1 Entity Change Requests
 
-Any request for entity addition, change or removal from Federation members needs to be communicated from or confirmed by their respective Registered Representatives.
-
-Communication of change happens via **_e-mail, Federation registry tool, etc._**
+Entity changes requests are communicated by the Registered Representative of
+the Federation Participant via the Federation registry tool. Entity changes
+will be approved or refused by the Federation Operator according to the
+results of the evaluation process.
 
 #### 6.2 Unsolicited Entity Changes
 
-The Federation Operator may amend or modify the Federation metadata at any time in order to:
+The Federation Operator may amend or modify the Federation metadata at any
+time in order to:
 
-*	Ensure the security and integrity of the metadata;
-*	Comply with interFederation agreements;
-*	Improve interoperability;
-*	Add value to the metadata.
+* Ensure the security and integrity of the metadata;
+* Comply with interFederation agreements;
+* Improve interoperability;
+* Add value to the metadata.
 
 Changes will be communicated to Registered Representatives for the entity.
 
+#### 6.3 Entity Addition and Removal Requests
+
+Federation participants SHALL request addition or removal of entities to
+the Federation Operator via email writing to the IDEM Federation help desk:
+<idem-help@garr.it>. 
+
+#### 6.4 Additional specifications
+
+The IDEM Federation supports the following additional specifications and the
+corresponding SAML representation:
+* The REFEDS Research and Scholarship Entity Category version 1.3
+[REFEDS-R&S]
+* The GEANT Data Protection Code of Conduct version 1.0 [GEANT-DP-CoC]
+* The Security Incident Response Trust Framework for Federated Identity
+version 1.0 [REFEDS-Sirtfi]
+
+Federation Participants MAY request that their entity is decorated with the
+corresponding metadata elements via the IDEM Federation Registry. In case
+of positive evaluation the entity will be decorated with the corresponding
+metadata elements and published.
+
 ## References
 
-* [RFC2119] Bradner, S., "Key words for use in RFCs to Indicate Requirement Levels", BCP 14, RFC 2119, March 1997.
-* [SAML-Metadata-RPI-V1.0]  SAML V2.0 Metadata Extensions for Registration and Publication Information Version 1.0. 03 April 2012. OASIS Committee Specification 01. http://docs.oasis-open.org/security/saml/Post2.0/saml-metadata-rpi/v1.0/cs01/saml-metadata-rpi-v1.0-cs01.html.
-* [SAML-Metadata-OS] OASIS Metadata for the OASIS Security Assertion Markup Language (SAML) V2.0: http://docs.oasis-open.org/security/saml/v2.0/saml-metadata-2.0-os.pdf.
+* [RFC2119] Bradner, S., "Key words for use in RFCs to Indicate Requirement
+ Levels", BCP 14, RFC 2119, March 1997.
+* [SAML-Metadata-RPI-V1.0]  SAML V2.0 Metadata Extensions for Registration
+and Publication Information Version 1.0. 03 April 2012. OASIS Committee
+Specification 01. http://docs.oasis-open.org/security/saml/Post2.0/saml-metadata-rpi/v1.0/cs01/saml-metadata-rpi-v1.0-cs01.html.
+* [SAML-Metadata-OS] OASIS Metadata for the OASIS Security Assertion Markup
+Language (SAML) V2.0: http://docs.oasis-open.org/security/saml/v2.0/saml-metadata-2.0-os.pdf.
+* [REFEDS-R&S] http://refeds.org/category/research-and-scholarship
+* [GEANT-DP-CoC-v1] https://www.geant.org/uri/Documents/GEANT_DP_CoC_ver1.0.pdf 
+* [REFEDS-Sirtfi] https://refeds.org/wp-content/uploads/2016/01/Sirtfi-1.0.pdf
+* [IDEM-Reg] https://www.idem.garr.it/documenti/regolamento 
+* [IDEM-Part-Rules] https://www.idem.garr.it/documenti/normepartecipazione
 
 [REFEDS Metadata Registration Practice Statement template]: https://github.com/REFEDS/MRPS/
 [logo]: https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg "CC-BY"
