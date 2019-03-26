@@ -7,7 +7,7 @@
 <table>
 <tr><td>Authors</td><td>Davide Vaghetti</td></tr>
 <tr><td>Last Modified</td><td>2019-03-26</td></tr>
-<tr><td>Version</td><td>0.2</td></tr>
+<tr><td>Version</td><td>0.4</td></tr>
 </table>
 
 **Acknowledgements**
@@ -30,32 +30,15 @@ The following definitions are used in this document:
 
 | Definition                 | Description |
 | -------------------------- | ------------- |
-| Federation                 | Identity Federation. An association of
-organisations that come together to securely exchange information as
-appropriate about their users and resources to enable collaborations and
-transactions.  |
-| Federation Member          | An organisation that has joined the
-Federation by agreeing to be bound by the Federation Policy in writing.
-Federation Member can register both Identity and Service Providers. |
-| Federation Partner	     | An organisation that signed a memorandum of
-understanding with the Federation. Federation Partners can register only
-Service Providers. |
-| Federation Participant     | Either a Federation Member or a Federation
-Partner.|  
-| Federation Operator        | Organisation providing the infrastructure
-for Authentication and Authorisation to Federation Members.|
-| Federation Policy          | A document describing the obligations,
-rights and expectations of the federation members and the Federation
-Operator. |
-| Entity                     | A discrete component that a member wishes to
-register and describe in metadata.  This is typically an Identity Provider
-or Service Provider. |
-| Registry                   | System used by the Federation Operator to
-register entity metadata. This may be via a self-service tool or via other
-manual processes. |
-| Registered Representatives | Individuals authorised to act on behalf of
-the member.  These may take on different roles with different rights
-attached to them. |
+| Federation                 | Identity Federation. An association of organisations that come together to securely exchange information as appropriate about their users and resources to enable collaborations and transactions.  |
+| Federation Member          | An organisation that has joined the Federation by agreeing to be bound by the Federation Policy in writing. Federation Member can register both Identity and Service Providers. |
+| Federation Partner	     | An organisation that signed a memorandum of understanding with the Federation. Federation Partners can register only Service Providers. |
+| Federation Participant     | Either a Federation Member or a Federation Partner.|  
+| Federation Operator        | Organisation providing the infrastructure for Authentication and Authorisation to Federation Members.|
+| Federation Policy          | A document describing the obligations, rights and expectations of the federation members and the Federation Operator. |
+| Entity                     | A discrete component that a member wishes to register and describe in metadata.  This is typically an Identity Provider or Service Provider. |
+| Registry                   | System used by the Federation Operator to register entity metadata. This may be via a self-service tool or via other manual processes. |
+| Registered Representatives | Individuals authorised to act on behalf of the member.  These may take on different roles with different rights attached to them. |
 
 ## 2. Introduction and Applicability
 
