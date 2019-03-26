@@ -1,12 +1,13 @@
+![idem-garr-logo]
+# IDEM Federation
 
-# REFEDS Metadata Registration Practice Statement
+## Metadata Registration Practice Statement
 
-
-| Version           | 1.0                        |
-| ----------------- | -------------------------- |
-| **Authors**       | **_Enter your name here_** |
-| **Last Modified** | 2018-01-16                 |
-
+<table>
+<tr><td>Authors</td><td>Davide Vaghetti</td></tr>
+<tr><td>Last Modified</td><td>2019-03-26</td></tr>
+<tr><td>Version</td><td>0.2</td></tr>
+</table>
 
 **Acknowledgements**
 
@@ -14,18 +15,11 @@ This document is based on the [REFEDS Metadata Registration Practice Statement t
 
 **Licence**
 
-![alt text][logo]
+![logo]
 
 This document is licensed under Creative Commons CC BY 4.0. You are free to share, re-use and adapt this document as long as attribution is given.
 
 ## 1. Definitions and Terminology
-
-> In this section, basic terms that are used in the document are defined. If a specific notation system is used (such as RFC2119), this should also be referenced.
->
-> Readers will be looking to ensure that they have an accurate understanding of any terminology used in the document.
->
-> Example Wording
-> -----------------
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119 [RFC2119].
 
@@ -34,7 +28,9 @@ The following definitions are used in this document:
 | Definition                 | Description |
 | -------------------------- | ------------- |
 | Federation                 | Identity Federation. An association of organisations that come together to securely exchange information as appropriate about their users and resources to enable collaborations and transactions.  |
-| Federation Member          | An organisation that has joined the Federation by agreeing to be bound by the Federation Policy in writing.  |
+| Federation Member          | An organisation that has joined the Federation by agreeing to be bound by the Federation Policy in writing.  Federation Member can register both Identity and Service Providers. |
+| Federation Partner	     | An organisation that signed a memorandum of understanding with the Federation. Federation Partners can register only Service Providers. |
+| Federation Participant     | Either a Federation Member or a Federation Partner.|  
 | Federation Operator        | Organisation providing the infrastructure for Authentication and Authorisation to Federation Members.|
 | Federation Policy          | A document describing the obligations, rights and expectations of the federation members and the Federation Operator. |
 | Entity                     | A discrete component that a member wishes to register and describe in metadata.  This is typically an Identity Provider or Service Provider. |
@@ -43,82 +39,126 @@ The following definitions are used in this document:
 
 ## 2. Introduction and Applicability
 
-> The introduction should briefly introduce the Metadata Registration Practice Statement and describe the document publication process.  It is important to remember that you may wish to change and update your Metadata Registration Practice Statement over time. If these changes are significant, it will mean that you will be publishing metadata that has been processed against different practice statements and as such it is important that is represented both in the documentation and in the metadata (see section 5). Previous editions of the MRPS should continue to be published to support referencing of these changes.
-> 
-> If you provide the document in multiple languages this should be referenced here, indicating which version is normative.
-> 
-> Readers will be looking to understand where you publish documentation, how you reflect changes and how this relates to published metadata.
-> 
-> Example Wording
-> -----------------
+The IDEM Federation is the Italian Identity Federation for the research and educational Organizaions that belong to the GARR network. GARR provides the Federation Operator through the GARR IDEM AAI Service. 
+This document describes the metadata registration practices of the GARR IDEM AAI Federation Operator with effect from the publication date shown on the cover sheet. All new entity registrations performed in the IDEM Federation on or after that date SHALL be processed as described here until the document is superseded.
 
-This document describes the metadata registration practices of the Federation Operator with effect from the publication date shown on the cover sheet. All new entity registrations performed on or after that date SHALL be processed as described here until the document is superseded.
+This document SHALL be published on the Federation website at:
 
-This document SHALL be published on the Federation website at: ``<url>``. Updates to the documentation SHALL be accurately reflected in entity metadata.
+``https://www.idem.garr.it/idem-metadata-registration-practice-statement``
 
-An entity that does not include a reference to a registration policy MUST be assumed to have been registered under an historic, undocumented registration practice regime. Requests to re-evaluate a given entity against a current MRPS MAY be made to the Federation helpdesk.
+Updates to the documentation SHALL be accurately reflected in entity metadata.
 
-## 3. Member Eligibility and Ownership
+All the entities that belong to the IDEM Federation SHALL include a reference to this registration policy.
 
-> This section should describe the process by which the Federation establishes member eligibility. HOW members join is probably already documented in the Federation Policy, and this can be referenced here. The MRPS should provide more detail about WHAT the Federation does to manage and restrict membership.
-> 
-> Readers will be looking to understand how organisations become members of your Federation, how you carry out any specific checks on these organisations and whether you permit any exceptions to these processes, such as outsourcing arrangements.
-> 
-> Example Wording
-> -----------------
+## 3. Member and Partner Eligibility and Ownership
 
-Members of the Federation are eligible to make use of the Federation Operator’s registry to register entities. Registration requests from other sources SHALL NOT be accepted.
+All the organisations connected to the GARR network are eligible to join
+the IDEM Federation as Federation Members.
+All the organisations that are not connected to the GARR netowork, but meet
+the Federation policy requirements and can offer valuable services to the
+Italian research and education community, are eligible to join the IDEM
+Federation as Federation Partners.
+Members and Partners of the Federation are also eligible to make use of
+a number of services made available by the IDEM Federation Operator, though
+to different extent. The main services are:
+* the IDEM registry to register entities: https://registry.idem.garr.it
+* the IDEM help desk available at <idem-help@garr.it>.
+* the IDEM wiki and documentation site: https://wiki.idem.garr.it
+* the IDEM tools available at https://registry.idem.garr.it/idem-tools
 
-The procedure for becoming a member of the Federation is documented at: ``<url>`` .
+The procedure for becoming a member or a partner of the Federation is
+documented at:
 
-The membership procedure verifies that the prospective member has legal capacity, and requires that all members enter into a contractual relationship with the Federation Operator by agreeing to the Federation policy. The Operator makes checks based on the legal name provided. The checks are conducted with a number of official databases **_provide examples_**.
+``https://www.idem.garr.it/en/join`` 
 
-The membership process also identifies and verifies Registered Representatives, who are permitted to act on behalf of the organisation in dealings with the Federation Operator. Verification is achieved by **_describe process_**.
+The membership procedure verifies that the prospective member is an
+organisation connected to the GARR network. As such it MUST have legal
+capacity, and it MUST agree to the Federation policy by signing the IDEM
+Federation membership agreement. The Operator makes checks based on the
+legal name provided. The checks are conducted on the official GARR
+database, which can also be consulted online:
 
-The process also establishes a canonical name for the Federation member.  The canonical name of a member MAY change during the membership period, for example as a result of corporate name changes or mergers.  The member’s canonical name is disclosed in the entity’s SAML v2.0 ```<md:OrganizationName>``` element.
+``https://www.garr.it/en/infrastructures/network-infrastructure/connected-organizations-and-sites?key=all``
+
+The partnership procedure verifies that the prospective partner is an
+organisation with legal capacity that provide services suitable to and
+useful for the research and education community. The prospective partner
+MUST also agree to the Federation policy by signing the IDEM
+Federation memorandum of understanding.
+
+The membership process also identifies and verifies Registered Legal
+Representatives, who are permitted to act on behalf of the organisation in
+dealings with third parties. Verification is achieved by the GARR
+Secretariat.
+
+The process, for both prospective members and partners, also establishes a
+canonical organisation name for the Federation participant.
+The canonical organisation name of a participant MAY change during the membership
+period, for example as a result of corporate name changes or mergers.  The
+participant’s canonical organisation name is disclosed in the entity’s SAML v2.0
+```<md:OrganizationName>``` element.
 
 ## 4. Metadata Format
 
-> This section should refer to the way in which registration information is referenced in the entity metadata. For the purposes of this document, use of the SAML V2.0 Metadata Extensions for Registration and Publication Information is assumed [SAML-Metadata-RPI-V1.0].
-> 
-> Example Wording
-> -----------------
-
-Metadata for all entities registered by the Federation Operator SHALL make use of the [SAML-Metadata-RPI-V1.0] metadata extension to indicate that the Federation Operator is the registrar for the entity and to detail the version of the MRPS statement that applies to the entity. The following is a non-normative example:
+Metadata for all entities registered by the Federation Operator SHALL make
+use of the [SAML-Metadata-RPI-V1.0] metadata extension to indicate that
+the IDEM Federation Operator is the registrar for the entity and to detail
+the version of the MRPS statement that applies to the entity. The following
+is a non-normative example:
 
 ```
 <mdrpi:RegistrationInfo
-    registrationAuthority="http://federation.example.org"
-    registrationInstant="2016-11-29T13:39:41Z">
+    registrationAuthority="https://www.idem.garr.it"
+    registrationInstant="2019-04-01T00:00:01Z">
     <mdrpi:RegistrationPolicy xml:lang="en">
-        http://federation.example.org/doc/mrps-20121110
+        https://www.idem.garr.it/
     </mdrpi:RegistrationPolicy>
 </mdrpi:RegistrationInfo>
 ```
 
 ## 5. Entity Eligibility and Validation
 
-> This section describes the processes and checks put in place before an entity is registered. Readers will be looking to understand how you determine a member’s right to publish information about a given entity and any checks you make to ensure the entity metadata is well constructed.
-> 
-> Text regarding entityIDs using URIs is included below. Some Federations will also permit URN-based entityIDs. You should describe what you do and do not permit under each schema. Please ensure that any processes described here reflect your current practice and any published documentation currently available for your Federation.
-> 
-> Example Wording
-> -----------------
-
 #### 5.1 Entity Registration
 
-The process by which a Federation member can register an entity is described at: ``<url>`` .
+Federation Members and Partners are able to register Service Provders in
+the IDEM Federation, while only Members are able to register Identity
+Providers.
 
-The Federation Operator SHALL verify the member’s right to use particular domain names in relation to entityID attributes and, for Identity Provider entities, any scope elements.
+The Entity eduGAIN publishing policy varies:
+* Identity Providers follow an opt-out policy, so they are published to
+eduGAIN, unless specifiy differently by the Member they belong to.
+* Service Providers follow an opt-in policy: they are published to eduGAIN
+ only if the Member or the Partner they belong to explicitly ask for the
+ eduGAIN publishing.
+ 
+The process by which a Federation member can register an entity is described at:
 
-The right to use a domain name SHALL be established in one of the following ways:
+``https://www.idem.garr.it/en/join/``
 
-* A member’s canonical name matches registrant information shown in WHOIS.
-* A member MAY be granted the right to make use of a specific domain name through a permission letter from the domain owner on a per-entity basis. Permission SHALL NOT be regarded as including permission for the use of sub-domains.
+The Federation Operator SHALL verify the member’s right to use particular
+domain names in relation to entityID attributes and, for Identity Provider
+entities, any scope elements.
+
+The right to use a domain name SHALL be established in one of the
+following ways:
+
+* A member's canonical name matches registrant information in the GARR NIC
+database.
+* A member's canonical name matches registrant information shown in WHOIS.
+* A member MAY be granted the right to make use of a specific domain name
+through a permission letter, or other equivalent proofs of permission, from
+the domain owner on a per-entity basis.
+Permission SHALL NOT be regarded as including permission for the use of
+sub-domains.
+
+
+> davide - 20190326 - arrivato qui.
+
 
 #### 5.2 EntityID Format
 
-Values of the entityID attribute registered MUST be an absolute URI using the http, https or urn schemes.
+Values of the entityID attribute registered MUST be an absolute URI using
+the http, https or urn schemes.
 
 https-scheme URIs are RECOMMENDED to all members.
 
@@ -175,3 +215,4 @@ Changes will be communicated to Registered Representatives for the entity.
 
 [REFEDS Metadata Registration Practice Statement template]: https://github.com/REFEDS/MRPS/
 [logo]: https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg "CC-BY"
+[idem-garr-logo]: idem-garr-logo.png
