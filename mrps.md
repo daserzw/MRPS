@@ -7,7 +7,7 @@
 <table>
 <tr><td>Authors</td><td>Davide Vaghetti</td></tr>
 <tr><td>Last Modified</td><td>2019-03-26</td></tr>
-<tr><td>Version</td><td>0.4</td></tr>
+<tr><td>Version</td><td>0.4.1</td></tr>
 </table>
 
 **Acknowledgements**
@@ -133,7 +133,7 @@ is a non-normative example:
 
 ## 5. Entity Eligibility and Validation
 
-#### 5.1 Entity Registration
+### 5.1 Entity Registration
 
 Federation Members and Partners are able to register Service Provders in
 the IDEM Federation, while only Members are able to register Identity
@@ -167,7 +167,7 @@ the domain owner on a per-entity basis.
 Permission SHALL NOT be regarded as including permission for the use of
 sub-domains.
 
-#### 5.2 EntityID Format
+### 5.2 EntityID Format
 
 Values of the entityID attribute registered MUST be an absolute URI using
 the http, https or urn schemes.
@@ -177,7 +177,7 @@ https-scheme URIs are RECOMMENDED to all members.
 http-scheme and https-scheme URIs used for entityID values MUST contain a
 host part whose value is a DNS domain.
 
-#### 5.3 Scope Format
+### 5.3 Scope Format
 
 For Identity Provider entities, scopes MUST be expressed in lowercase and
 rooted in a valid DNS domain name space. Multiple scopes are allowed.
@@ -192,7 +192,7 @@ separated by literal '.'s (representing a domain to be validated as "owned"
 by the entity owner), and ending with a '$' anchor (e.g.
 `(foo|bar)\.example\.com$`).
 
-#### 5.4 Entity Validation
+### 5.4 Entity Validation
 
 On entity registration, the Federation Operator SHALL carry out entity
 validation checks.
@@ -221,14 +221,14 @@ Once a Federation Participant has joined the IDEM Federation new entities
 MAY be added, modified or removed by the organisation with the approval of
 the Federation Operator.
 
-#### 6.1 Entity Change Requests
+### 6.1 Entity Change Requests
 
 Entity changes requests are communicated by the Registered Representative of
 the Federation Participant via the Federation registry tool. Entity changes
 will be approved or refused by the Federation Operator according to the
 results of the evaluation process.
 
-#### 6.2 Unsolicited Entity Changes
+### 6.2 Unsolicited Entity Changes
 
 The Federation Operator may amend or modify the Federation metadata at any
 time in order to:
@@ -240,13 +240,13 @@ time in order to:
 
 Changes will be communicated to Registered Representatives for the entity.
 
-#### 6.3 Entity Addition and Removal Requests
+### 6.3 Entity Addition and Removal Requests
 
 Federation participants SHALL request addition or removal of entities to
 the Federation Operator via email writing to the IDEM Federation help desk:
 <idem-help@garr.it>. 
 
-#### 6.4 Additional specifications
+### 6.4 Additional specifications
 
 The IDEM Federation supports the following additional specifications and the
 corresponding SAML representation:
