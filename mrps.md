@@ -43,9 +43,9 @@ The following definitions are used in this document:
 ## 2. Introduction and Applicability
 
 The IDEM Federation is the Italian Identity Federation for the research and
-educational Organizaions that belong to the GARR network. GARR provides the
+educational Organisations that belong to the GARR network. GARR provides the
 Federation Operator through the GARR IDEM AAI Service.
-Normative documents of the IDEM Federations are:
+Normative documents of the IDEM Federation are:
 * The IDEM Federation Regulation [IDEM-Reg].
 * The IDEM Federation Rules of Participation [IDEM-Part-Rules].
 
@@ -69,14 +69,14 @@ reference to this registration policy.
 
 All the organisations connected to the GARR network are eligible to join
 the IDEM Federation as Federation Members.
-All the organisations that are not connected to the GARR netowork, but meet
+All the organisations that are not connected to the GARR network, but meet
 the Federation policy requirements and can offer valuable services to the
 Italian research and education community, are eligible to join the IDEM
 Federation as Federation Partners.
 Members and Partners of the Federation are also eligible to make use of
-a number of services made available by the IDEM Federation Operator, though
+a number of services made available by the IDEM Federation Operator, through
 to different extent. The main services are:
-* the IDEM registry to register entities: https://registry.idem.garr.it
+* the IDEM Entity Registry to register entities: https://registry.idem.garr.it/rr3
 * the IDEM help desk: <idem-help@garr.it>.
 * the IDEM documentation site: https://wiki.idem.garr.it
 * the IDEM federaton tools: https://registry.idem.garr.it/idem-tools
@@ -234,7 +234,7 @@ The Federation Operator may amend or modify the Federation metadata at any
 time in order to:
 
 * Ensure the security and integrity of the metadata;
-* Comply with interFederation agreements;
+* Comply with interfederation agreements;
 * Improve interoperability;
 * Add value to the metadata.
 
@@ -243,7 +243,7 @@ Changes will be communicated to Registered Representatives for the entity.
 ### 6.3 Entity Addition and Removal Requests
 
 Federation participants SHALL request addition or removal of entities to
-the Federation Operator via email writing to the IDEM Federation help desk:
+the Federation Operator via email writing to the IDEM Federation helpdesk:
 <idem-help@garr.it>. 
 
 ### 6.4 Additional specifications
@@ -257,7 +257,7 @@ corresponding SAML representation:
 version 1.0 [REFEDS-Sirtfi]
 
 Federation Participants MAY request that their entity is decorated with the
-corresponding metadata elements via the IDEM Federation Registry. In case
+corresponding metadata elements via the IDEM Entity Registry. In case
 of positive evaluation the entity will be decorated with the corresponding
 metadata elements and published.
 
