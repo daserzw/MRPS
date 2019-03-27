@@ -43,9 +43,9 @@ The following definitions are used in this document:
 ## 2. Introduction and Applicability
 
 The IDEM Federation is the Italian Identity Federation for the research and
-educational Organizaions that belong to the GARR network. GARR provides the
+educational organisations that belong to the GARR network. GARR provides the
 Federation Operator through the GARR IDEM AAI Service.
-Normative documents of the IDEM Federations are:
+Normative documents of the IDEM Federation are:
 * The IDEM Federation Regulation [IDEM-Reg].
 * The IDEM Federation Rules of Participation [IDEM-Part-Rules].
 
@@ -69,14 +69,14 @@ reference to this registration policy.
 
 All the organisations connected to the GARR network are eligible to join
 the IDEM Federation as Federation Members.
-All the organisations that are not connected to the GARR netowork, but meet
+All the organisations that are not connected to the GARR network, but meet
 the Federation policy requirements and can offer valuable services to the
 Italian research and education community, are eligible to join the IDEM
 Federation as Federation Partners.
 Members and Partners of the Federation are also eligible to make use of
 a number of services made available by the IDEM Federation Operator, though
 to different extent. The main services are:
-* the IDEM registry to register entities: https://registry.idem.garr.it
+* the IDEM Registry to register entities: https://registry.idem.garr.it
 * the IDEM help desk: <idem-help@garr.it>.
 * the IDEM documentation site: https://wiki.idem.garr.it
 * the IDEM federaton tools: https://registry.idem.garr.it/idem-tools
@@ -224,9 +224,9 @@ the Federation Operator.
 ### 6.1 Entity Change Requests
 
 Entity changes requests are communicated by the Registered Representative of
-the Federation Participant via the Federation registry tool. Entity changes
-will be approved or refused by the Federation Operator according to the
-results of the evaluation process.
+the Federation Participant via the IDEM Registry. Entity changes will be
+approved or refused by the Federation Operator according to the results of
+the evaluation process.
 
 ### 6.2 Unsolicited Entity Changes
 
@@ -234,7 +234,7 @@ The Federation Operator may amend or modify the Federation metadata at any
 time in order to:
 
 * Ensure the security and integrity of the metadata;
-* Comply with interFederation agreements;
+* Comply with inter-federation agreements;
 * Improve interoperability;
 * Add value to the metadata.
 
@@ -257,9 +257,9 @@ corresponding SAML representation:
 version 1.0 [REFEDS-Sirtfi]
 
 Federation Participants MAY request that their entity is decorated with the
-corresponding metadata elements via the IDEM Federation Registry. In case
-of positive evaluation the entity will be decorated with the corresponding
-metadata elements and published.
+corresponding metadata elements via the IDEM Registry. In case of positive
+evaluation the entity will be decorated with the corresponding metadata
+elements and published.
 
 ## References
 
