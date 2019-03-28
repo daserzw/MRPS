@@ -309,5 +309,4 @@ Language (SAML) V2.0: http://docs.oasis-open.org/security/saml/v2.0/saml-metadat
 * [IDEM-Part-Rules] https://www.idem.garr.it/documenti/normepartecipazione
 
 [REFEDS Metadata Registration Practice Statement template]: https://github.com/REFEDS/MRPS/
-[logo]: https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg "CC-BY"
 [idem-garr-logo]: https://user-images.githubusercontent.com/604473/55159747-0f7ce900-5162-11e9-8021-ad21a3c12505.png
