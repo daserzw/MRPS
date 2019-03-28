@@ -26,7 +26,8 @@
 **Acknowledgements**
 
 This document is based on the [REFEDS Metadata Registration Practice
-Statement template].
+Statement template] that draws on work carried out by the UK Access
+Management Federation and the ACOnet Identity Federation.
 
 **Licence**
 
