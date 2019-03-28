@@ -5,14 +5,22 @@
 ## Metadata Registration Practice Statement
 
 <table>
-<tr>
-	<td>Authors</td><td>Davide Vaghetti<br />
-	Barbara Monticini<br />
-	Marco Malavolti
-</tr>
-<tr>
-<td>Last Modified</td><td>2019-03-26</td></tr>
-<tr><td>Version</td><td>0.4.1</td></tr>
+  <tr>
+    <td>Authors</td>
+    <td>Davide Vaghetti</td>
+  </tr>
+  </tr>
+    <td>Reviewers</td>
+    <td>Marco Malavolti<br />Barbara Monticini<br /></td>
+  </tr>
+  <tr>
+    <td>Last Modified</td>
+    <td>2019-03-28</td>
+  </tr>
+  <tr>
+    <td>Version</td>
+    <td>1.0</td>
+  </tr>
 </table>
 
 **Acknowledgements**
@@ -29,7 +37,9 @@ to share, re-use and adapt this document as long as attribution is given.
 
 ## 1. Definitions and Terminology
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119 [RFC2119].
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+"SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
+document are to be interpreted as described in RFC 2119 [RFC2119].
 
 The following definitions are used in this document:
 
@@ -233,9 +243,15 @@ the Federation Participant via the IDEM Registry. Entity changes will be
 approved or refused by the Federation Operator according to the results of
 the evaluation process.
 
-### 6.2 Unsolicited Entity Changes
+### 6.2 Entity Addition and Removal Requests
 
-The Federation Operator may amend or modify the Federation metadata at any
+Federation participants SHALL request addition or removal of entities to
+the Federation Operator via email writing to the IDEM Federation help desk:
+<idem-help@garr.it>. 
+
+### 6.3 Unsolicited Entity changes
+
+The Federation Operator may amend or modify the federation metadata at any
 time in order to:
 
 * Ensure the security and integrity of the metadata;
@@ -245,13 +261,17 @@ time in order to:
 
 Changes will be communicated to Registered Representatives for the entity.
 
-### 6.3 Entity Addition and Removal Requests
+### 6.4 Entity Suspension and ex-officio Removal
 
-Federation participants SHALL request addition or removal of entities to
-the Federation Operator via email writing to the IDEM Federation help desk:
-<idem-help@garr.it>. 
+The Federation Operator may suspend or remove the entity metadata from the
+Federation in order to:
 
-### 6.4 Additional specifications
+* Comply with the IDEM Regulation [IDEM-Reg] and the IDEM Rules of
+Participation [IDEM-Part-Rules].
+* Protect the Federation Members in case of verified security breaches.
+* Remove orphaned entities.
+
+### 6.5 Additional specifications
 
 The IDEM Federation supports the following additional specifications and the
 corresponding SAML representation:
