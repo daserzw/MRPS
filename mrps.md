@@ -5,8 +5,13 @@
 ## Metadata Registration Practice Statement
 
 <table>
-<tr><td>Authors</td><td>Davide Vaghetti</td></tr>
-<tr><td>Last Modified</td><td>2019-03-26</td></tr>
+<tr>
+	<td>Authors</td><td>Davide Vaghetti<br />
+	Barbara Monticini<br />
+	Marco Malavolti
+</tr>
+<tr>
+<td>Last Modified</td><td>2019-03-26</td></tr>
 <tr><td>Version</td><td>0.4.1</td></tr>
 </table>
 
