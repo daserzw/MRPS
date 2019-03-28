@@ -79,7 +79,7 @@ document is superseded.
 
 This document SHALL be published on the Federation website at:
 
-``https://www.idem.garr.it/idem-metadata-registration-practice-statement``
+``https://www.idem.garr.it/idem-mrps-1.0.md``
 
 Updates to the documentation SHALL be accurately reflected in entity
 metadata.
@@ -148,7 +148,7 @@ is a non-normative example:
     registrationAuthority="https://www.idem.garr.it"
     registrationInstant="2019-04-01T00:00:01Z">
     <mdrpi:RegistrationPolicy xml:lang="en">
-        https://www.idem.garr.it/idem-metadata-registration-practice-statement
+        https://www.idem.garr.it/idem-mrps-1.0.md
     </mdrpi:RegistrationPolicy>
 </mdrpi:RegistrationInfo>
 ```
