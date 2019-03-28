@@ -26,14 +26,21 @@
 **Acknowledgements**
 
 This document is based on the [REFEDS Metadata Registration Practice
-Statement template].
+Statement template]. The REFEDS template draws on work carried out by
+the UK Access Management Federation and the ACOnet Identity Federation,
+which kindly shared it with the community.
 
 **Licence**
 
-![logo]
-
-This document is licensed under Creative Commons CC BY 4.0. You are free
-to share, re-use and adapt this document as long as attribution is given.
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+   <img alt="Creative Commons License" style="border-width:0"
+     	src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+</a>
+<br />
+This work is licensed under a
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+   Creative Commons Attribution 4.0 International License
+</a>.
 
 ## 1. Definitions and Terminology
 
@@ -303,4 +310,4 @@ Language (SAML) V2.0: http://docs.oasis-open.org/security/saml/v2.0/saml-metadat
 
 [REFEDS Metadata Registration Practice Statement template]: https://github.com/REFEDS/MRPS/
 [logo]: https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg "CC-BY"
-[idem-garr-logo]: idem-garr-logo.png
+[idem-garr-logo]: https://user-images.githubusercontent.com/604473/55159747-0f7ce900-5162-11e9-8021-ad21a3c12505.png
